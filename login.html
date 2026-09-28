@@ -4,416 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>SafePME | Segurança digital sem complicação</title>
+    <title>Entrar | SafePME</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="auth-page">
 
-    <!-- HEADER -->
-    <header class="public-header">
+    <div class="auth-container">
 
-        <a href="index.html" class="logo">
-            <span class="logo-icon">✓</span>
-            <span>Safe<span>PME</span></span>
-        </a>
-
-        <nav class="main-nav">
-            <a href="#como-funciona">Como funciona</a>
-            <a href="#recursos">Recursos</a>
-            <a href="#planos">Planos</a>
-        </nav>
-
-        <div class="header-actions">
-            <a href="login.html" class="btn btn-outline">Entrar</a>
-            <a href="cadastro.html" class="btn btn-primary">Começar gratuitamente</a>
-        </div>
-
-        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
-            ☰
-        </button>
-
-    </header>
-
-
-    <!-- HERO -->
-    <main>
-
-        <section class="hero">
-
-            <div class="hero-content">
-
-                <div class="eyebrow">
-                    🛡️ Segurança digital para pequenas empresas
-                </div>
-
-                <h1>
-                    Sua empresa protegida
-                    <span>contra golpes digitais.</span>
-                </h1>
-
-                <p>
-                    O SafePME ajuda pequenas empresas a identificar riscos,
-                    prevenir golpes e proteger suas informações de forma simples
-                    e acessível.
-                </p>
-
-                <div class="hero-actions">
-
-                    <a href="cadastro.html" class="btn btn-primary btn-large">
-                        Começar gratuitamente
-                    </a>
-
-                    <a href="#como-funciona" class="btn btn-ghost btn-large">
-                        Conhecer a solução →
-                    </a>
-
-                </div>
-
-                <div class="hero-trust">
-                    <span>✓ Simples de usar</span>
-                    <span>✓ Feito para PMEs</span>
-                    <span>✓ Segurança sem complicação</span>
-                </div>
-
-            </div>
-
-
-            <!-- MOCKUP DO DASHBOARD -->
-            <div class="hero-visual">
-
-                <div class="dashboard-preview">
-
-                    <div class="preview-top">
-                        <div class="preview-brand">
-                            <span class="logo-icon small">✓</span>
-                            SafePME
-                        </div>
-
-                        <div class="preview-avatar">
-                            IV
-                        </div>
-                    </div>
-
-                    <div class="preview-body">
-
-                        <div class="preview-title">
-                            <small>Visão geral</small>
-                            <strong>Olá, Iara 👋</strong>
-                        </div>
-
-                        <div class="security-score">
-
-                            <div>
-                                <small>Nível de segurança</small>
-                                <strong>78<span>/100</span></strong>
-                                <label class="status-warning">
-                                    ● Atenção
-                                </label>
-                            </div>
-
-                            <div class="score-circle">
-                                78%
-                            </div>
-
-                        </div>
-
-                        <div class="preview-cards">
-
-                            <div>
-                                <small>Alertas</small>
-                                <strong>03</strong>
-                            </div>
-
-                            <div>
-                                <small>Riscos</small>
-                                <strong>02</strong>
-                            </div>
-
-                            <div>
-                                <small>Proteções</small>
-                                <strong>08</strong>
-                            </div>
-
-                        </div>
-
-                        <div class="preview-alert">
-
-                            <span class="alert-icon warning">!</span>
-
-                            <div>
-                                <strong>E-mail suspeito identificado</strong>
-                                <small>Há 10 minutos</small>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- PROBLEMA -->
-        <section class="section problem-section">
-
-            <div class="section-heading">
-
-                <span class="section-label">O problema</span>
-
-                <h2>
-                    Pequenas empresas também
-                    precisam de proteção.
-                </h2>
-
-                <p>
-                    Golpes digitais podem acontecer com qualquer empresa.
-                    Muitas vezes, o problema não é a falta de preocupação,
-                    mas a falta de conhecimento e ferramentas simples.
-                </p>
-
-            </div>
-
-
-            <div class="feature-grid">
-
-                <article class="feature-card">
-                    <div class="feature-icon red">✉</div>
-                    <h3>Phishing</h3>
-                    <p>
-                        Mensagens e e-mails falsos podem induzir colaboradores
-                        a fornecer informações ou acessar links perigosos.
-                    </p>
-                </article>
-
-                <article class="feature-card">
-                    <div class="feature-icon orange">▣</div>
-                    <h3>Boletos falsos</h3>
-                    <p>
-                        Fraudes financeiras podem causar prejuízos antes que
-                        a empresa perceba o problema.
-                    </p>
-                </article>
-
-                <article class="feature-card">
-                    <div class="feature-icon purple">◉</div>
-                    <h3>Contas vulneráveis</h3>
-                    <p>
-                        Contas e acessos desprotegidos aumentam a exposição
-                        da empresa a ataques.
-                    </p>
-                </article>
-
-                <article class="feature-card">
-                    <div class="feature-icon blue">!</div>
-                    <h3>Falta de conhecimento</h3>
-                    <p>
-                        Soluções muito técnicas podem dificultar a proteção
-                        de pequenas empresas.
-                    </p>
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- COMO FUNCIONA -->
-        <section class="section light-section" id="como-funciona">
-
-            <div class="section-heading center">
-
-                <span class="section-label">Como funciona</span>
-
-                <h2>
-                    Segurança sem complicação.
-                </h2>
-
-                <p>
-                    O SafePME transforma informações de segurança em
-                    orientações simples para o dia a dia da empresa.
-                </p>
-
-            </div>
-
-
-            <div class="steps">
-
-                <div class="step">
-
-                    <div class="step-number">01</div>
-
-                    <h3>Cadastre sua empresa</h3>
-
-                    <p>
-                        Informe alguns dados básicos para iniciar sua jornada
-                        de proteção.
-                    </p>
-
-                </div>
-
-
-                <div class="step-line"></div>
-
-
-                <div class="step">
-
-                    <div class="step-number">02</div>
-
-                    <h3>Identifique os riscos</h3>
-
-                    <p>
-                        Visualize os principais pontos que precisam de atenção.
-                    </p>
-
-                </div>
-
-
-                <div class="step-line"></div>
-
-
-                <div class="step">
-
-                    <div class="step-number">03</div>
-
-                    <h3>Proteja seu negócio</h3>
-
-                    <p>
-                        Receba alertas e recomendações para reduzir riscos.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- RECURSOS -->
-        <section class="section" id="recursos">
-
-            <div class="section-heading">
-
-                <span class="section-label">Recursos</span>
-
-                <h2>
-                    Tudo o que você precisa para
-                    cuidar da segurança da empresa.
-                </h2>
-
-            </div>
-
-
-            <div class="resources-grid">
-
-                <article class="resource-card">
-                    <span>🔍</span>
-                    <h3>Verificação</h3>
-                    <p>
-                        Verifique conteúdos suspeitos antes de tomar uma decisão.
-                    </p>
-                </article>
-
-                <article class="resource-card">
-                    <span>🔔</span>
-                    <h3>Alertas</h3>
-                    <p>
-                        Tenha uma visão clara dos alertas que precisam de atenção.
-                    </p>
-                </article>
-
-                <article class="resource-card">
-                    <span>🛡️</span>
-                    <h3>Mapa de riscos</h3>
-                    <p>
-                        Entenda quais áreas da empresa precisam de proteção.
-                    </p>
-                </article>
-
-                <article class="resource-card">
-                    <span>📊</span>
-                    <h3>Relatórios</h3>
-                    <p>
-                        Acompanhe a evolução da segurança da empresa.
-                    </p>
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- CTA -->
-        <section class="cta-section">
-
-            <div>
-
-                <span class="section-label light">
-                    Comece agora
-                </span>
-
-                <h2>
-                    Proteção digital pode ser simples.
-                </h2>
-
-                <p>
-                    Conheça o SafePME e tenha uma visão mais clara
-                    dos riscos da sua empresa.
-                </p>
-
-            </div>
-
-            <a href="cadastro.html" class="btn btn-white btn-large">
-                Criar minha conta →
-            </a>
-
-        </section>
-
-    </main>
-
-
-    <!-- FOOTER -->
-    <footer class="public-footer">
-
-        <div class="footer-brand">
-
+        <!-- LOGO -->
+        <div class="auth-brand">
             <a href="index.html" class="logo">
                 <span class="logo-icon">✓</span>
                 <span>Safe<span>PME</span></span>
             </a>
+        </div>
 
-            <p>
-                Segurança digital inteligente para pequenas empresas.
+
+        <!-- CARD DE LOGIN -->
+        <div class="auth-card">
+
+            <div class="auth-heading">
+                <h1>Bem-vinda de volta</h1>
+
+                <p>
+                    Entre para acessar o painel do SafePME.
+                </p>
+            </div>
+
+
+            <form onsubmit="handleLogin(event)">
+
+                <!-- E-MAIL -->
+                <div class="form-group">
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="seuemail@empresa.com"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- SENHA -->
+                <div class="form-group">
+
+                    <label for="password">
+                        Senha
+                    </label>
+
+                    <div class="password-wrapper">
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Digite sua senha"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            onclick="togglePassword('password')"
+                            class="password-toggle"
+                        >
+                            Mostrar
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BOTÃO -->
+                <button
+                    type="submit"
+                    class="btn btn-primary btn-full"
+                >
+                    Entrar
+                </button>
+
+            </form>
+
+
+            <!-- CADASTRO -->
+            <p class="auth-footer">
+
+                Ainda não possui uma conta?
+
+                <a href="cadastro.html">
+                    Criar conta
+                </a>
+
             </p>
 
         </div>
 
 
-        <div class="footer-links">
+        <!-- VOLTAR -->
+        <p class="auth-back">
 
-            <div>
-                <strong>Produto</strong>
-                <a href="#recursos">Recursos</a>
-                <a href="#planos">Planos</a>
-            </div>
+            <a href="index.html">
+                ← Voltar para o início
+            </a>
 
-            <div>
-                <strong>Empresa</strong>
-                <a href="#">Sobre o SafePME</a>
-                <a href="#">Contato</a>
-            </div>
+        </p>
 
-        </div>
-
-        <div class="footer-bottom">
-            © 2026 SafePME. Projeto acadêmico.
-        </div>
-
-    </footer>
+    </div>
 
 
     <script src="js/app.js"></script>
