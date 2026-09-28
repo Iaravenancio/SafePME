@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos | SafePME</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="app-page">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            <a href="dashboard.html" class="logo">
+                <span class="logo-icon">✓</span>
+                <span>Safe<span>PME</span></span>
+            </a>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <span class="nav-section-title">VISÃO GERAL</span>
+
+            <a href="dashboard.html" class="sidebar-link">
+                <span>⌂</span>
+                Dashboard
+            </a>
+
+            <span class="nav-section-title">SEGURANÇA</span>
+
+            <a href="alertas.html" class="sidebar-link">
+                <span>🔔</span>
+                Alertas
+                <span class="nav-badge">3</span>
+            </a>
+
+            <a href="verificar.html" class="sidebar-link">
+                <span>⌕</span>
+                Verificar
+            </a>
+
+            <a href="riscos.html" class="sidebar-link">
+                <span>◈</span>
+                Riscos
+            </a>
+
+            <span class="nav-section-title">CONTA</span>
+
+            <a href="planos.html" class="sidebar-link active">
+                <span>▣</span>
+                Planos
+            </a>
+
+            <a href="relatorios.html" class="sidebar-link">
+                <span>▤</span>
+                Relatórios
+            </a>
+
+            <a href="configuracoes.html" class="sidebar-link">
+                <span>⚙</span>
+                Configurações
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <button class="sidebar-link logout-button" onclick="logout()">
+                <span>↪</span>
+                Sair
+            </button>
+        </div>
+
+    </aside>
+
+
+    <main class="app-main">
+
+        <header class="app-topbar">
+
+            <div class="breadcrumb">
+                <span>SafePME</span>
+                <span>/</span>
+                <strong>Planos</strong>
+            </div>
+
+            <div class="topbar-actions">
+
+                <button class="notification-button">
+                    🔔
+                    <span></span>
+                </button>
+
+                <div class="user-menu">
+
+                    <div class="user-avatar">IV</div>
+
+                    <div class="user-info">
+                        <strong id="dashboardName">Iara</strong>
+                        <small>Administrador</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <div class="app-content">
+
+            <div class="page-heading">
+
+                <span class="page-label">PLANO ATUAL</span>
+
+                <h1>Plano de proteção</h1>
+
+                <p>
+                    Gerencie os recursos de segurança disponíveis para sua empresa.
+                </p>
+
+            </div>
+
+
+            <section class="content-section">
+
+                <div class="plan-card">
+
+                    <div>
+                        <span class="card-label">SEU PLANO</span>
+
+                        <h2>SafePME Essencial</h2>
+
+                        <p>
+                            Proteção básica para pequenas empresas.
+                        </p>
+
+                        <ul>
+                            <li>✓ Verificação de conteúdos suspeitos</li>
+                            <li>✓ Monitoramento de riscos</li>
+                            <li>✓ Alertas de segurança</li>
+                            <li>✓ Relatórios de segurança</li>
+                        </ul>
+                    </div>
+
+                    <div class="plan-price">
+                        <strong>Grátis</strong>
+                        <span>para demonstração</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section class="content-section">
+
+                <div class="section-header-row">
+                    <h2>Outros planos</h2>
+                </div>
+
+                <div class="quick-actions-grid">
+
+                    <div class="action-card">
+                        <div class="action-icon blue">✓</div>
+                        <strong>Essencial</strong>
+                        <p>Recursos básicos para proteção da empresa.</p>
+                        <strong>Grátis</strong>
+                    </div>
+
+                    <div class="action-card">
+                        <div class="action-icon purple">★</div>
+                        <strong>Profissional</strong>
+                        <p>Mais recursos para acompanhamento dos riscos.</p>
+                        <strong>Em breve</strong>
+                    </div>
+
+                    <div class="action-card">
+                        <div class="action-icon orange">◆</div>
+                        <strong>Empresarial</strong>
+                        <p>Proteção avançada para empresas.</p>
+                        <strong>Em breve</strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>

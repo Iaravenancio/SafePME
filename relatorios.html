@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios | SafePME</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="app-page">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            <a href="dashboard.html" class="logo">
+                <span class="logo-icon">✓</span>
+                <span>Safe<span>PME</span></span>
+            </a>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <span class="nav-section-title">VISÃO GERAL</span>
+
+            <a href="dashboard.html" class="sidebar-link">
+                <span>⌂</span>
+                Dashboard
+            </a>
+
+            <span class="nav-section-title">SEGURANÇA</span>
+
+            <a href="alertas.html" class="sidebar-link">
+                <span>🔔</span>
+                Alertas
+                <span class="nav-badge">3</span>
+            </a>
+
+            <a href="verificar.html" class="sidebar-link">
+                <span>⌕</span>
+                Verificar
+            </a>
+
+            <a href="riscos.html" class="sidebar-link">
+                <span>◈</span>
+                Riscos
+            </a>
+
+            <span class="nav-section-title">CONTA</span>
+
+            <a href="planos.html" class="sidebar-link">
+                <span>▣</span>
+                Planos
+            </a>
+
+            <a href="relatorios.html" class="sidebar-link active">
+                <span>▤</span>
+                Relatórios
+            </a>
+
+            <a href="configuracoes.html" class="sidebar-link">
+                <span>⚙</span>
+                Configurações
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <button class="sidebar-link logout-button" onclick="logout()">
+                <span>↪</span>
+                Sair
+            </button>
+        </div>
+
+    </aside>
+
+
+    <main class="app-main">
+
+        <header class="app-topbar">
+
+            <div class="breadcrumb">
+                <span>SafePME</span>
+                <span>/</span>
+                <strong>Relatórios</strong>
+            </div>
+
+            <div class="topbar-actions">
+
+                <button class="notification-button">
+                    🔔
+                    <span></span>
+                </button>
+
+                <div class="user-menu">
+
+                    <div class="user-avatar">IV</div>
+
+                    <div class="user-info">
+                        <strong id="dashboardName">Iara</strong>
+                        <small>Administrador</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <div class="app-content">
+
+            <div class="page-heading">
+
+                <span class="page-label">ACOMPANHAMENTO</span>
+
+                <h1>Relatórios</h1>
+
+                <p>
+                    Acompanhe o histórico de segurança da sua empresa.
+                </p>
+
+            </div>
+
+
+            <section class="content-section">
+
+                <div class="section-header-row">
+
+                    <h2>Resumo de segurança</h2>
+
+                    <button
+                        class="btn btn-primary"
+                        onclick="alert('Relatório gerado com sucesso!')"
+                    >
+                        + Gerar relatório
+                    </button>
+
+                </div>
+
+
+                <div class="quick-actions-grid">
+
+                    <div class="action-card">
+
+                        <div class="action-icon blue">
+                            🛡️
+                        </div>
+
+                        <strong>
+                            Nível de segurança
+                        </strong>
+
+                        <p>
+                            Resultado geral da segurança da empresa.
+                        </p>
+
+                        <strong>
+                            78/100
+                        </strong>
+
+                    </div>
+
+
+                    <div class="action-card">
+
+                        <div class="action-icon orange">
+                            ◈
+                        </div>
+
+                        <strong>
+                            Riscos identificados
+                        </strong>
+
+                        <p>
+                            Quantidade de riscos que precisam de atenção.
+                        </p>
+
+                        <strong>
+                            02
+                        </strong>
+
+                    </div>
+
+
+                    <div class="action-card">
+
+                        <div class="action-icon green">
+                            ✓
+                        </div>
+
+                        <strong>
+                            Proteções
+                        </strong>
+
+                        <p>
+                            Recomendações de segurança concluídas.
+                        </p>
+
+                        <strong>
+                            08
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section class="content-section">
+
+                <div class="section-header-row">
+
+                    <h2>Relatórios recentes</h2>
+
+                </div>
+
+
+                <div class="alerts-list">
+
+                    <div class="alert-item">
+
+                        <div class="alert-icon success">
+                            ✓
+                        </div>
+
+                        <div class="alert-content">
+
+                            <strong>
+                                Relatório de segurança
+                            </strong>
+
+                            <p>
+                                Análise geral dos riscos identificados.
+                            </p>
+
+                            <small>
+                                Setembro de 2026
+                            </small>
+
+                        </div>
+
+                        <button
+                            class="btn btn-outline"
+                            onclick="alert('Visualização do relatório demonstrativo.')"
+                        >
+                            Visualizar
+                        </button>
+
+                    </div>
+
+
+                    <div class="alert-item">
+
+                        <div class="alert-icon warning">
+                            !
+                        </div>
+
+                        <div class="alert-content">
+
+                            <strong>
+                                Análise de riscos
+                            </strong>
+
+                            <p>
+                                Resumo dos principais pontos de atenção.
+                            </p>
+
+                            <small>
+                                Setembro de 2026
+                            </small>
+
+                        </div>
+
+                        <button
+                            class="btn btn-outline"
+                            onclick="alert('Visualização do relatório demonstrativo.')"
+                        >
+                            Visualizar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
