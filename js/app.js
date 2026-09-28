@@ -123,6 +123,7 @@ function handleRegister(event) {
     );
 
     window.location.href = "dashboard.html";
+    }
 
 
 /* =========================================================
