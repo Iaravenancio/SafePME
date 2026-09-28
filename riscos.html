@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Alertas | SafePME</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body class="app-page">
+
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-logo">
+
+            <a href="dashboard.html" class="logo">
+
+                <span class="logo-icon">✓</span>
+
+                <span>Safe<span>PME</span></span>
+
+            </a>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <span class="nav-section-title">
+                VISÃO GERAL
+            </span>
+
+            <a href="dashboard.html" class="sidebar-link">
+                <span>⌂</span>
+                Dashboard
+            </a>
+
+            <span class="nav-section-title">
+                SEGURANÇA
+            </span>
+
+            <a href="alertas.html" class="sidebar-link active">
+                <span>🔔</span>
+                Alertas
+                <span class="nav-badge">3</span>
+            </a>
+
+            <a href="verificar.html" class="sidebar-link">
+                <span>⌕</span>
+                Verificar
+            </a>
+
+            <a href="riscos.html" class="sidebar-link">
+                <span>◈</span>
+                Riscos
+            </a>
+
+            <span class="nav-section-title">
+                CONTA
+            </span>
+
+            <a href="relatorios.html" class="sidebar-link">
+                <span>▤</span>
+                Relatórios
+            </a>
+
+            <a href="planos.html" class="sidebar-link">
+                <span>◇</span>
+                Planos
+            </a>
+
+            <a href="configuracoes.html" class="sidebar-link">
+                <span>⚙</span>
+                Configurações
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <button
+                class="sidebar-link logout-button"
+                onclick="logout()">
+
+                <span>↪</span>
+                Sair
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <main class="app-main">
+
+        <header class="app-topbar">
+
+            <button
+                class="sidebar-mobile-button"
+                onclick="toggleSidebar()">
+                ☰
+            </button>
+
+            <div class="breadcrumb">
+
+                <span>SafePME</span>
+                <span>/</span>
+                <strong>Alertas</strong>
+
+            </div>
+
+
+            <div class="topbar-actions">
+
+                <button class="notification-button">
+                    🔔
+                    <span></span>
+                </button>
+
+                <div class="user-menu">
+
+                    <div class="user-avatar">
+                        IV
+                    </div>
+
+                    <div class="user-info">
+
+                        <strong>
+                            Iara
+                        </strong>
+
+                        <small>
+                            Administrador
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <div class="app-content">
+
+
+            <div class="page-heading">
+
+                <div>
+
+                    <span class="page-label">
+                        SEGURANÇA
+                    </span>
+
+                    <h1>
+                        Central de alertas
+                    </h1>
+
+                    <p>
+                        Acompanhe os eventos que precisam da sua atenção.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="filter-tabs">
+
+                <button class="filter-tab active">
+                    Todos
+                    <span>3</span>
+                </button>
+
+                <button class="filter-tab">
+                    Críticos
+                    <span>1</span>
+                </button>
+
+                <button class="filter-tab">
+                    Atenção
+                    <span>1</span>
+                </button>
+
+                <button class="filter-tab">
+                    Resolvidos
+                    <span>1</span>
+                </button>
+
+            </div>
+
+
+            <div class="alerts-page-list">
+
+
+                <article class="full-alert-card high">
+
+                    <div class="alert-icon danger">
+                        !
+                    </div>
+
+                    <div class="full-alert-content">
+
+                        <div class="alert-card-heading">
+
+                            <div>
+
+                                <span class="risk-tag high">
+                                    Risco alto
+                                </span>
+
+                                <h2>
+                                    Possível tentativa de phishing
+                                </h2>
+
+                            </div>
+
+                            <small>
+                                Hoje, 10:32
+                            </small>
+
+                        </div>
+
+                        <p>
+                            Identificamos sinais suspeitos em uma mensagem
+                            recebida por um endereço monitorado.
+                        </p>
+
+                        <a href="verificar.html" class="text-button">
+                            Verificar conteúdo →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="full-alert-card medium">
+
+                    <div class="alert-icon warning">
+                        !
+                    </div>
+
+                    <div class="full-alert-content">
+
+                        <div class="alert-card-heading">
+
+                            <div>
+
+                                <span class="risk-tag medium">
+                                    Atenção
+                                </span>
+
+                                <h2>
+                                    Boleto precisa de verificação
+                                </h2>
+
+                            </div>
+
+                            <small>
+                                Hoje, 09:14
+                            </small>
+
+                        </div>
+
+                        <p>
+                            Um documento foi identificado como potencialmente
+                            suspeito e deve ser confirmado antes do pagamento.
+                        </p>
+
+                        <a href="verificar.html" class="text-button">
+                            Verificar boleto →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="full-alert-card resolved">
+
+                    <div class="alert-icon success">
+                        ✓
+                    </div>
+
+                    <div class="full-alert-content">
+
+                        <div class="alert-card-heading">
+
+                            <div>
+
+                                <span class="risk-tag low">
+                                    Resolvido
+                                </span>
+
+                                <h2>
+                                    Senha atualizada
+                                </h2>
+
+                            </div>
+
+                            <small>
+                                Ontem, 16:45
+                            </small>
+
+                        </div>
+
+                        <p>
+                            Uma credencial da empresa foi atualizada.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
