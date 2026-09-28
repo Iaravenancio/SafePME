@@ -112,7 +112,6 @@ function handleRegister(event) {
     JSON.stringify(user)
     );
 
-    // Cria a sessão do usuário
     localStorage.setItem(
         "safePMESession",
         "true"
