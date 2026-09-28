@@ -108,19 +108,22 @@ function handleRegister(event) {
 
 
     localStorage.setItem(
-        "safePMEUser",
-        JSON.stringify(user)
+    "safePMEUser",
+    JSON.stringify(user)
     );
 
+    // Cria a sessão do usuário
+    localStorage.setItem(
+        "safePMESession",
+        "true"
+    );
 
     alert(
         "Conta criada com sucesso!\n\n" +
         "Agora você será direcionado para o painel."
     );
 
-
     window.location.href = "dashboard.html";
-}
 
 
 /* =========================================================
